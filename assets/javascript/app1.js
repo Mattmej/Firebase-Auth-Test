@@ -35,7 +35,15 @@ function checkEmail(emailStr){
                 // var temp1=firebase.database().child("Users").child(firebaseUser.uid).getValue("email");
                 //$("#userStatus").empty();
                 // console.log(temp1);
-                $("#userStatus").text("*****Sign in"+response.email.val());
+                // $("#userStatus").text("*****Sign in"+response.email.val());
+
+                var email = response[Object.keys(response)[0].email];
+                console.log(email);
+
+
+
+
+
                 console.log("salam salam");
             });
         }
